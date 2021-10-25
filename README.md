@@ -1,11 +1,11 @@
 # starkfrontendtools
 Contains react and vue tool modules commonly used in the front end
 
-    This project is based on https://github.com/jaredpalmer/tsdx
+    This project is based on https://github.com/jaredpalmer/tsdx (https://www.modb.pro/db/46048)
 
 HomePage:
 
-        
+        https://github.com/StarksJohn/starkfrontendtools
 
 Install:
 
@@ -17,7 +17,7 @@ Usage:
 
 Push:
 
-        open vpn in terminal and git push origin main
+        open vpn in terminal and git push origin master
 
 Publish:
 
