@@ -119,14 +119,14 @@ body.dialog-open {
 }
 
 //绝对位置 上下居中
-.absolute_column_center {
+.absolute-column-center {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
 //绝对位置 左右居中
-.absolute_row_center {
+.absolute-row-center {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -155,10 +155,11 @@ body.dialog-open {
   height: @height;
 }
 
-//字体大小，颜色
-.sc(@size, @color) {
+//字体大小，颜色,行高
+.font(@size, @color,@line-height) {
   font-size: @size;
   color: @color;
+  line-height:@line-height;
 }
 
 .boxSizing {
