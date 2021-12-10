@@ -17,12 +17,12 @@ Usage:
 
 Push:
 
-        open vpn in terminal and git push origin master
+        git commit -a -s -m ''
+        git push origin master
 
 Publish:
 
         npm login
-        yarn build
-        note: change the version of your package.json every time before npm publish
         npm publish 
+            note: change the version of your package.json every time before npm publish
         
