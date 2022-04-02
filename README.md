@@ -17,8 +17,9 @@ Usage:
 
 Push:
 
-        git commit -a -s -m ''
-        git push origin master
+        1 change the version of your package.json every time before npm publish
+        2 git commit -a -s -m ''
+        3 git push origin master
 
 Publish:
 

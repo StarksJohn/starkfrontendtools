@@ -7,7 +7,8 @@ import * as Math from './tools/Math'
 import objTools from './tools/objTools'
 import tool from './tools/tool'
 import useRefreshComp from './useHooks/useRefreshComp'
+import vueTools from './tools/vueTools'
 
 export {
-  dateTools, stringTools,ahooks,arrayTools,Math,objTools,tool,useRefreshComp
+  dateTools, stringTools,ahooks,arrayTools,Math,objTools,tool,useRefreshComp,vueTools
 }
