@@ -113,6 +113,16 @@ export default {
     console.log('browserVersion res=',res)
     const isIOS=res.ios||res.iPhone||res.iPad
     return {...res,isIOS};
+  },
+  /**
+   * 页面滚回顶部
+   * IOS有效,安卓页面加载会自动置顶
+   */
+  goToTop:() => {
+    const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+    console.log('goToTop scrollTop=', scrollTop)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
   }
 
 }
