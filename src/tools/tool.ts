@@ -104,7 +104,7 @@ export default {
       iPhone: u.indexOf('iPhone') > -1|| u.indexOf('Mac') > -1 , //是否为iPhone或者QQHD浏览器
       iPad: u.indexOf('iPad') > -1, //是否iPad
       webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
-      weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+      weixin: u.indexOf('MicroMessenger') > -1, //是否微信,只要在手机微信浏览器里打开的h5页面,都是true （2015-01-22新增）
       // @ts-ignore
       qq: u.match(/\sQQ/i) == " qq", //是否QQ
       language:navigator.language.toLowerCase(),
