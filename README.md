@@ -15,6 +15,15 @@ Usage:
 
         import {  } from 'starkfrontendtools';
 
+        Better way to use: 
+            https://zh-hans.reactjs.org/docs/code-splitting.html
+            https://github.com/StarksJohn/StarkReactProjectScaffold
+            eg:
+                import("starkfrontendtools").then(starkfrontendtools => {
+                     const randomNum= starkfrontendtools.Math.randomNums(0,10)
+                      console.log('testDynamicImports randomNum=',randomNum)
+                });
+
 Publish:
 
         npm login
