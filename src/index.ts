@@ -9,8 +9,7 @@ import tool from './tools/tool'
 import useRefreshComp from './useHooks/useRefreshComp'
 import vueTools from './tools/vueTools'
 import *as jsBridge from './tools/JsBridge'
-import *as HRAFetcher from './HRAFetcher/index'
 
 export {
-  dateTools, stringTools,ahooks,arrayTools,Math,objTools,tool,useRefreshComp,vueTools,jsBridge,HRAFetcher
+  dateTools, stringTools,ahooks,arrayTools,Math,objTools,tool,useRefreshComp,vueTools,jsBridge
 }
