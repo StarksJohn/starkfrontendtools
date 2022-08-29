@@ -28,7 +28,7 @@ const queryPageParam = ($route: { query: {} }, queryKey: string = '') => {
 /**
  * 获取vue3路由上query参数
  */
-export const getVue3RouteQuery = (router: any) => {
+const getVue3RouteQuery = (router: any) => {
     console.log('vueTools.ts getVue3RouteQuery router=', router)
     const {currentRoute} = router
     const {query} = currentRoute.value
@@ -41,7 +41,7 @@ export const getVue3RouteQuery = (router: any) => {
  * @param router
  * @param path 路径
  */
-export const redirectTo = (router: { replace: Function }, path: string) => {
+const redirectTo = (router: { replace: Function }, path: string) => {
     console.log('vueTools.ts redirectTo router=', router)
     console.log('vueTools.ts redirectTo path=', path)
     const {replace} = router
