@@ -1,5 +1,5 @@
 {
-  "version": "0.0.33",
+  "version": "0.0.34",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -45,6 +45,7 @@
     }
   ],
   "dependencies": {
+    "@types/lodash": "^4.14.184",
     "ahooks": "^2.10.11",
     "emoji-regex": "^10.0.0",
     "lodash": "^4.17.21",
