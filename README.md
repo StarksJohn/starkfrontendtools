@@ -24,16 +24,12 @@ Usage:
                       console.log('testDynamicImports randomNum=',randomNum)
                 });
 
-Publish:
 
-        npm login
-        npm publish 
-            note: change the version of your package.json every time before npm publish
+Push and Publish:
 
-Push:
-
-        git commit -a -s -m ''
-        git push origin master
+        1 update the version in package.json
+        2 git commit -a -s -m 'add' && git push origin master && npm login && npm publish
+        3 Finally, in your main project, yarn add starkfrontendtools or npm i starkfrontendtools
 
 
         
