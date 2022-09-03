@@ -26,7 +26,7 @@ const queryPageParam = ($route: { query: {} }, queryKey: string = '') => {
 }
 
 /**
- * 获取vue3路由上query参数
+ * 获取vue3路由(页面参数)里query参数
  */
 const getVue3RouteQuery = (router: any) => {
     console.log('vueTools.ts getVue3RouteQuery router=', router)

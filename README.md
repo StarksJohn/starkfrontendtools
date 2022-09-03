@@ -28,7 +28,7 @@ Usage:
 Push and Publish:
 
         1 update the version in package.json
-        2 git commit -a -s -m 'add' && git push origin master && npm login && npm publish
+        2 nvm use 14 && git commit -a -s -m 'add' && git push origin master && npm login && npm publish
             Username: stark2018
         3 Finally, in your main project, yarn add starkfrontendtools or npm i starkfrontendtools
 
