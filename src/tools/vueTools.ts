@@ -41,7 +41,7 @@ const getVue3RouteQuery = (router: any) => {
  * @param router
  * @param path 路径
  */
-const redirectTo = (router: { replace: Function }, path: string) => {
+const redirectTo = (router: any, path: string) => {
     console.log('vueTools.ts redirectTo router=', router)
     console.log('vueTools.ts redirectTo path=', path)
     const {replace} = router
