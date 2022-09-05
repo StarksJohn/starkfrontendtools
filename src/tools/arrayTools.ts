@@ -229,23 +229,22 @@ function copyArr (array: any[]) {
  * https://www.cnblogs.com/lvmh/p/6104397.html
  * 优化版for循环 ,是所有循环遍历方法中性能最高的一种
  * 比 forEach 性能好，因 forEach 跳出循环 很麻烦 https://www.cnblogs.com/PheonixHkbxoic/p/5708749.html
- * @param cb ,(i)=>{
- *  ...
- *  return xxx  xxx为1时 ，break for 循环,2时continue， 否则 不 break
- * }
- * @param arr
+ * eg:
+ *    const name='123'
+ *    const res=forLoop((item, index) => {
+              if (item.name === name) {
+                return item
+              }
+            }, [{name:'123'},{name:'321'}] )
  */
 function forLoop (cb: Function, arr: any[]) {
   let result = null
   for (let i = 0, len = arr.length; i < len; i++) {
     if (cb) {
       result = cb(arr[i], i)
-      // if (result == 1) {
-      //     break;
-      // } else
-      if (result === 2) {
+      if (result === -1) {
         continue
-      } else if (result) { // result 可能为 对象 或者 true，只要满足 外部条件
+      } else if (result) { // result 可能为 对象 或者 true，只要满足 外部的查询条件,就跳出循环,return 查询到的 数据
         break // 跳出循环
       }
     }
