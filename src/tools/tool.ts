@@ -110,9 +110,13 @@ export default {
       language:navigator.language.toLowerCase(),
       RN:false,
     }
+    const plat = navigator.platform;
+    const win = plat.indexOf("Win") == 0;
+    const mac = plat.indexOf("Mac") == 0;
+    const isPc=win || mac
     console.log('browserVersion res=',res)
     const isIOS=res.ios||res.iPhone||res.iPad
-    return {...res,isIOS};
+    return {...res,isIOS,isPc};
   },
   /**
    * 页面滚回顶部
