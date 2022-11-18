@@ -127,6 +127,20 @@ export default {
     console.log('goToTop scrollTop=', scrollTop)
     document.documentElement.scrollTop = 0
     document.body.scrollTop = 0
+  },
+
+  /**
+   * https://blog.csdn.net/weixin_41815063/article/details/119783330
+   * 是否禁止页面滚动, 比 @touchmove.prevent 好, 因为 @touchmove.prevent 会导致页面里的弹框内容也无法滚动
+   * @param newValue
+   */
+   isStopPageScroll: (newValue:boolean) =>{
+    console.log('starkfrontendtools  isStopPageScroll newValue=', newValue)
+    newValue
+        ? document.getElementsByTagName('body')[0].classList.add('stop-scroll')
+        : document
+            .getElementsByTagName('body')[0]
+            .classList.remove('stop-scroll');
   }
 
 }
