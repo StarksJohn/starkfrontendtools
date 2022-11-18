@@ -132,6 +132,14 @@ export default {
   /**
    * https://blog.csdn.net/weixin_41815063/article/details/119783330
    * 是否禁止页面滚动, 比 @touchmove.prevent 好, 因为 @touchmove.prevent 会导致页面里的弹框内容也无法滚动
+   * .stop-scroll {
+        left    : 0;
+        position: fixed;
+        top     : 0;
+        height  : 100%;
+        overflow: hidden;
+        width   : 100%;
+      }  声明在项目的根样式文件里
    * @param newValue
    */
    isStopPageScroll: (newValue:boolean) =>{
