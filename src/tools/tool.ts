@@ -149,6 +149,24 @@ export default {
         : document
             .getElementsByTagName('body')[0]
             .classList.remove('stop-scroll');
+  },
+
+  /**
+   * 禁止被手势缩放 https://blog.csdn.net/rxh13543515695/article/details/119798451
+   */
+  noGestures:() => {
+    window.onload = function() {
+      document.addEventListener('touchstart', function(event) {
+        console.log('App.vue touchstart')
+        if (event.touches.length > 1) {
+          event.preventDefault()
+        }
+      })
+      document.addEventListener('gesturestart', function(event) {
+        console.log('App.vue gesturestart')
+        event.preventDefault()
+      })
+    }
   }
 
 }
